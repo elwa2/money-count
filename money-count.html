@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="4021642.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>تطبيق عد الأموال</title>
+
+</head>
+<body>
+
+    
+  <div class="container">
+    <h1>تطبيق عد الأموال</h1>
+    <p>عدد العمليات اليوم: <span id="operationCount">0</span></p>
+    <table class="money-table">
+      <thead>
+        <tr>
+          <th>الفئة المالية</th>
+          <th>الرقم الأول</th>
+          <th>الرقم الثاني</th>
+          <th>الإجمالي</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>200</td>
+          <td><input type="number" class="amount-input" id="amount200" value="0" oninput="calculateTotal()"></td>
+          <td><input type="number" class="amount-input" id="amount200Second" value="0" oninput="calculateTotal()"></td>
+          <td id="total200">0</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td><input type="number" class="amount-input" id="amount100" value="0" oninput="calculateTotal()"></td>
+          <td><input type="number" class="amount-input" id="amount100Second" value="0" oninput="calculateTotal()"></td>
+          <td id="total100">0</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td><input type="number" class="amount-input" id="amount50" value="0" oninput="calculateTotal()"></td>
+          <td><input type="number" class="amount-input" id="amount50Second" value="0" oninput="calculateTotal()"></td>
+          <td id="total50">0</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td><input type="number" class="amount-input" id="amount20" value="0" oninput="calculateTotal()"></td>
+          <td><input type="number" class="amount-input" id="amount20Second" value="0" oninput="calculateTotal()"></td>
+          <td id="total20">0</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><input type="number" class="amount-input" id="amount10" value="0" oninput="calculateTotal()"></td>
+          <td><input type="number" class="amount-input" id="amount10Second" value="0" oninput="calculateTotal()"></td>
+          <td id="total10">0</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><input type="number" class="amount-input" id="amount5" value="0" oninput="calculateTotal()"></td>
+          <td><input type="number" class="amount-input" id="amount5Second" value="0" oninput="calculateTotal()"></td>
+          <td id="total5">0</td>
+        </tr>
+        <tr>
+          <td colspan="3">الإجمالي الكلي لكل الأعمدة</td>
+          <td id="totalAll">0</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="btn-container">
+            <button class="btn" onclick="saveData()">حفظ العملية</button>
+            <button class="btn" onclick="loadSavedData()">استعادة العملية السابقة</button>
+            <button class="btn" onclick="downloadData()">تنزيل الأرقام كملف Excel</button>
+            <button class="btn" onclick="resetData()">حذف الأرقام</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="savedMessage" class="saved-message">تم حفظ العملية بنجاح!</p>
+  </div>
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
+    <script>
+
+      
+    </script>
+</body>
+</html>
