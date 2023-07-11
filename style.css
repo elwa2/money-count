@@ -113,3 +113,9 @@
     /* أضف المزيد من التعديلات حسب الحاجة */
   }
 }
+  .footer {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
